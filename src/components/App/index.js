@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
 import './styles.css';
 
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/a-propos" element={<About />} />
+        <Route path="/me-contacter" element={<Contact />} />
       </Routes>
     </div>
   );

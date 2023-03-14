@@ -1,5 +1,6 @@
 import './styles.scss';
 import montage from '../../assets/montage-moi.png';
+import { NavLink } from 'react-router-dom';
 
 export default function About() {
     return (
@@ -19,7 +20,7 @@ export default function About() {
                         mais chut... ne le répétez pas à mon futur employeur. Je suis donc à la recherche d'un emploi en tant que développeuse web. 
                         Si vous cherchez une développeuse web dynamique, n'hésitez pas à me contacter !
                     </p>
-                    <button type="button">Engagez-moi !</button>
+                    <NavLink to="/me-contacter"><button type="button">Engagez-moi !</button></NavLink> 
                 </div>
             </div>
         </div>
