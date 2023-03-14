@@ -1,0 +1,73 @@
+@use '../../styles/vars';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2em;
+    background-color: vars.$main-color;
+    color: vars.$textColor;
+
+    &_nav {
+        &_btn {
+            padding: 5px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: vars.$textColor;
+            visibility: hidden;
+            opacity: 0;
+            font-size: 1.8em;
+        }
+    }
+
+    &_nav a {
+        margin: 0 2em;
+        color: vars.$textColor;
+    }
+
+    &_nav a:hover {
+        color: vars.$secondaryColor;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        &_nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5em;
+            background-color: vars.$main-color;
+            transition: 1s;
+            transform: translateY(-100vh);
+
+            & a {
+                font-size: 1.5em;
+            }
+
+            &_close_btn {
+                position: absolute;
+                top: 2em;
+                right: 2em;
+            }
+
+            &_btn {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        & .responsive_nav {
+            transform: none;
+        }
+    }
+}
