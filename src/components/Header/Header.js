@@ -1,6 +1,7 @@
 import './styles.scss';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
     const navRef = useRef();
@@ -12,9 +13,9 @@ export default function Header() {
         <header className="header">
             <h1>Pourquoi m'engager?</h1>
             <nav ref={navRef} className="header_nav">
-                <a href="#">Accueil</a>
-                <a href="#">A propos de moi</a>
-                <a href="#">Me contacter</a>
+                <NavLink to="/">Accueil</NavLink>
+                <NavLink to="/a-propos">A propos de moi</NavLink>
+                <NavLink to="/me-contacter">Me contacter</NavLink>
                 <button className="header_nav_btn header_nav_close_btn" onClick={showNavBar}> 
                     <FaTimes />
                 </button>
