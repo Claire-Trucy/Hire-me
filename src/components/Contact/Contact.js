@@ -1,9 +1,11 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Modal from 'react-modal';
 import './styles.scss';
 
 export default function Contact() {
     const form = useRef();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -11,6 +13,7 @@ export default function Contact() {
         emailjs.sendForm('service_msec5mj', 'template_cfvdpvp', form.current, 'EuiqluiunJNFkFV4m')
         .then((result) => {
             console.log(result.text);
+            setIsModalOpen(true);
         }, (error) => {
             console.log(error.text);
         });
@@ -30,6 +33,15 @@ export default function Contact() {
                     <textarea name="message" placeholder="Entrez votre message"></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
+                <Modal
+                    className="contact_container_modal"
+                    isOpen={isModalOpen}
+                    onRequestClose={() => setIsModalOpen(false)}
+                    contentLabel="Confirmation de l'envoi"
+                >
+                    <h2>Votre message a bien été envoyé</h2>
+                    <button onClick={() => setIsModalOpen(false)}>Fermer</button>
+                </Modal>
             </div>
         </div>
     )

@@ -30,6 +30,45 @@
             }
         }
 
+        &_modal {
+            background-color: #161922;
+            margin: 60px auto;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+
+            & h2 {
+                margin-top: 10px;
+            }
+
+            & button {
+                background-color: #ffcc74;
+                color: black;
+                border: 2px solid transparent;
+                text-decoration: none;
+                padding: 10px 30px;
+                border-radius: 30px;
+                font-size: 17px;
+                font-weight: bold;
+                font-family: 'Josefin Sans', sans-serif;
+                margin: 10px auto 0;
+            }
+
+            & button:hover {
+                transform: scale(1.2);
+                background-color: transparent;
+                border: 2px solid #ffcc74;
+                color: white;
+                transition: .4s;
+                cursor: pointer;
+            }
+        }
+
         & form {
             display: flex;
             flex-wrap: wrap;
@@ -103,6 +142,10 @@
 
 @media screen and (max-width: 300px) {
     .contact {
-        padding: 80px
+        padding: 80px;
+
+        &_container_modal {
+            margin: 60px 10px;
+        }
     }
 }
