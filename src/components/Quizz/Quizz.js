@@ -34,6 +34,7 @@ export default function Quizz() {
                         à conquérir le monde du web !
                     </h6>
                     <h3>Mon CV ne montre pas mon humour, mais mon quizz le fera !</h3>
+                    <h4>PS: ... Engagez-moi !</h4>
                 </div>
                 <div className="quizz_container_questions">
                     <div className="quizz_container_questions_question">
