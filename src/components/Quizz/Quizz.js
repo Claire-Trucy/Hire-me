@@ -61,7 +61,7 @@ export default function Quizz() {
                         <p>Si j'étais un personnage de Star Wars, lequel ce serait et pourquoi ?</p>
                             <button className={results[3] === true ? 'answer correct' : results[3] === false ? 'answer incorrect' : 'answer'} onClick={() => handleAnswerClick(3, 0)}>Je serais R2-D2, parce que je suis souvent sous-estimé mais je finis toujours par faire le job.</button>
                             <button className={results[3] === true ? 'answer correct' : results[3] === false ? 'answer incorrect' : 'answer'} onClick={() => handleAnswerClick(3, 1)}>Je serais Chewbacca, parce que je suis un vrai guerrier de la programmation</button>
-                            <button className={results[3] === true ? 'answer correct' : results[3] === false ? 'answer incorrect' : 'answer'} onClick={() => handleAnswerClick(3, 2)}>Je serais Palpatine, parce que je suis peux avoir la même tête que lui au réveil lorsqu'il se fait attaquer par Mace Windu</button>
+                            <button className={results[3] === true ? 'answer correct' : results[3] === false ? 'answer incorrect' : 'answer'} onClick={() => handleAnswerClick(3, 2)}>Je serais Palpatine, parce que je peux avoir la même tête que lui au réveil lorsqu'il se fait attaquer par Mace Windu</button>
                             {renderResultMessage(results[3])}
                     </div>
                 </div>
