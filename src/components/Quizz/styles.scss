@@ -83,3 +83,28 @@
         }
     }
 }
+@media screen and (max-width: 800px) {
+    .quizz_container {
+        margin: 0 -90px;
+
+        &_title h6 {
+            font-size: 1em;
+        }
+
+        &_title h3 {
+            font-size: 1.9em;
+        }
+
+        &_questions {
+            padding: 0;
+
+            & p {
+                font-size: 0.9em;
+            }
+
+            & button {
+                font-size: 0.7em;
+            }
+        }
+    }
+}
