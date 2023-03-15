@@ -26,18 +26,18 @@ export default function Quizz() {
                             <button>J'apprécie la possibilité de travailler en pyjama.</button>
                     </div>
                     <div className="quizz_container_questions_question">
-                        <p>Quel est votre super-pouvoir secret en matière de développement web ?</p>
+                        <p>Quel est mon super-pouvoir secret en matière de développement web ?</p>
                             <button>Je peux écrire du code à l'envers.</button>
                             <button>J'ai la capacité de parler aux ordinateurs et de leur demander gentiment de fonctionner correctement.</button>
                             <button>Je peux coder en utilisant uniquement des emojis.</button>
                     </div>
                     <div className="quizz_container_questions_question">
-                        <p>Si vous étiez un personnage de Star Wars, lequel seriez-vous et pourquoi ?</p>
-                            <button>Je serais Jar Jar Binks, parce que je suis souvent sous-estimé mais je finis toujours par faire le job.</button>
+                        <p>Si j'étais un personnage de Star Wars, lequel ce serait et pourquoi ?</p>
+                            <button>Je serais R2-D2, parce que je suis souvent sous-estimé mais je finis toujours par faire le job.</button>
                             <button>Je serais Chewbacca, parce que je suis un vrai guerrier de la programmation</button>
-                            <button>Je serais R2-D2, parce que je suis petit mais je peux accomplir de grandes choses</button>
+                            <button>Je serais Palpatine, parce que je suis peux avoir la même tête que lui au réveil lorsqu'il se fait attaquer par Mace Windu</button>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     )
