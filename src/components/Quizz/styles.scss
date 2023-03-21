@@ -1,5 +1,27 @@
 @use '../../styles/vars';
 
+button {
+    background-color: #ffcc74;
+    color: black;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #ffcc74;
+    color: #ffcc74;
+    transition: .4s;
+    cursor: pointer;
+  }
+  
 .quizz {
     background-image: url("../../assets/img-background.png");
     background-size: cover;
